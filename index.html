@@ -36,6 +36,7 @@
 			margin: 0 0 1rem;
 			white-space: nowrap;
 		}
+
 		p { margin: 0.5rem 0; font-size: 0.95rem; color: #ffffff; }
 		.btext {
 			width: 100%;
@@ -56,6 +57,7 @@
 		table { 
 			font-size: 1.2rem; color: #000000; 
 			width: 100%;
+			table-layout: fixed;
 			border-collapse: collapse;
 			margin-top: 1rem;
 			font-family: "League Spartan", sans-serif;
@@ -63,8 +65,11 @@
 			text-align: center;
 		}
 
+		ul li {
+			margin-bottom:10px;
+		}
+
 		td {
-			width: 25%;
 			height: 2.5rem;
 			border: 2px solid #000000;
 			vertical-align: middle;
@@ -204,11 +209,109 @@
 		<p2>*Registering all pokemon in a wild zone is required before non-static wild zone encounters can be alpha.
 			<br>**These probabilities are predetermined for spawns. Use other resources for specific Pokemon.</p2>
 		<p><br>If attempting to obtain the best odds for a Shiny Alpha (Shalpha) Pokemon, Sparkling Power 3, Alpha Power 3, and Shiny Charm will yield 1/1148.18 odds for any Hyperspace spawn (excluding Legendaries or Mythicals). These are the best odds for hunting Shalphas in Hyperspace Lumiose. If Shiny 3 and Alpha 3 are too difficult or time consuming for you, prioritize Alpha Power over Shiny Power if you have the Shiny charm as this generally gives higher odds than the reverse. Additionally Alpha Power 3 gives 2.43x odds of getting a shalpha as opposed to Alpha Power 2.</p>
+		<h2>Shalpha Odds Table (Hyperspace Lumiose)</h2>
+		<table>
+			<tbody>
+				<tr>
+					<td class="turquoise" colspan="5">No Shiny Charm</td>
+				</tr>
+				<tr>
+					<td class="pink" rowspan="2">Shiny Power</td>
+					<td class="grey" rowspan="2">Base Alpha Odds</td>
+					<td class="blue" colspan="3">Alpha Power</td>
+				</tr>
+				<tr>
+					<td class="blue">Alpha Power 1</td>
+					<td class="blue">Alpha Power 2</td>
+					<td class="blue">Alpha Power 3</td>
+				</tr>
+				<tr>
+					<td class="grey">None</td>
+					<td class="white">1/409600</td>
+					<td class="white">1/37236</td>
+					<td class="white">1/19505</td>
+					<td class="white">1/8031.37</td>
+				</tr>
+				<tr>
+					<td class="pink">Shiny 1</td>
+					<td class="owhite">1/20485</td>
+					<td class="owhite">1/18620</td>
+					<td class="owhite">1/9753.57</td>
+					<td class="owhite">1/4016.18</td>
+				</tr>
+				<tr>
+					<td class="pink">Shiny 2</td>
+					<td class="white">1/</td>
+					<td class="white">1/</td>
+					<td class="white">1/</td>
+					<td class="white">1/</td>
+				</tr>
+				<tr>
+					<td class="pink">Shiny 3</td>
+					<td class="owhite">1/</td>
+					<td class="owhite">1/</td>
+					<td class="owhite">1/</td>
+					<td class="owhite">1/</td>
+				</tr>
+				<tr>
+					<td class="turquoise" colspan="5">Shiny Charm</td>
+				</tr>
+				<tr>
+					<td class="pink" rowspan="2">Shiny Power</td>
+					<td class="grey" rowspan="2">Base Alpha Odds</td>
+					<td class="blue" colspan="3">Alpha Power</td>
+				</tr>
+				<tr>
+					<td class="blue">Alpha Power 1</td>
+					<td class="blue">Alpha Power 2</td>
+					<td class="blue">Alpha Power 3</td>
+				</tr>
+				<tr>
+					<td class="grey">None</td>
+					<td class="white">1/409600</td>
+					<td class="white">1/37236</td>
+					<td class="white">1/19505</td>
+					<td class="white">1/8031.37</td>
+				</tr>
+				<tr>
+					<td class="pink">Shiny 1</td>
+					<td class="owhite">1/20485</td>
+					<td class="owhite">1/18620</td>
+					<td class="owhite">1/9753.57</td>
+					<td class="owhite">1/4016.18</td>
+				</tr>
+				<tr>
+					<td class="pink">Shiny 2</td>
+					<td class="white">1/</td>
+					<td class="white">1/</td>
+					<td class="white">1/</td>
+					<td class="white">1/</td>
+				</tr>
+				<tr>
+					<td class="pink">Shiny 3</td>
+					<td class="owhite">1/</td>
+					<td class="owhite">1/</td>
+					<td class="owhite">1/</td>
+					<td class="owhite">1/</td>
+				</tr>
+			</tbody>
+		</table>
 		<h1><br><br>Shiny and Spawn Mechanics</h1>
 		<p>Your game will store up to 10 shinies across Lumiose City that have previously spawned in. These shinies can be left and revisited at any time to catch. Any additional shinies that spawn in past 10 will cause the oldest shiny to despawn. If a shiny is KOed or runs away, it will NOT respawn.</p>
 		<p>The spawn radius of Pokemon is 50 meters. This means that spawn locations that are within 50 meters will always have their respective Pokemon unless it has been recently KOed. The despawn radius of Pokemon is 70 meters. This allows for Pokemon that have already been spawned in to stay given that you are not more than 70 meters away. Using a Pin is the best way to measure distances and can be used as a guide when resetting spawns.</p>
 		<img src="SHG_P1.jpg" alt="SHG_P1" width="672" height="450">
+		<ul>
+			<li><b>Shiny Locked Pokémon</b> - Gift Pokémon, In-game trade Pokémon, Scripted encounters, Rogue Mega Pokémon, Legendaries/mythicals.</li>
+				<ul>
+					<li><b>Exceptions - Base</b> - Fossil Pokémon; <b>DLC</b> - Latias, Latios, Cobalion, Terrakion, Virizion.</li>
+				</ul>
+			<li>The <b>DLC Legendaries</b> listed above cannot be alpha but are affected by the shiny charm and sparkling power.</li>
+			<li><b>Fossil Pokémon</b> obtained via reviving fossils cannot have their shiny or alpha odds increased (1/4096 Shiny; 1% Alpha).</li>
+		</ul>
+		<h2>Hyperspace Lumiose</h2>
+		<p>Hyperspace Lumiose is the dimension that the player can access from the DLC. This area has different spawn mechanics than the overworld, however, these spawns generally follow certain patterns. Looking at these patterns is usful in optimizing shiny hunts.</p>
 
+		
 	</section>
 </body>
 </html>
